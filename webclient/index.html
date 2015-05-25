@@ -11,8 +11,18 @@
         <li><a id="add-rss" href="#modal">+</a></li>
     </ul>
 </nav>
+<main>
+
+</main>
 <div id="modal">
-    <a href="#close">tete</a>
+    <form id="get-rss-form" method="post">
+        <a class="close-button" href="#">X</a>
+        <label for="rss-link">
+            <input type="text" id="rss-link" name="rss-link" value="http://people.onliner.by/feed" autofocus/>
+            <input type="submit" value="Get RSS"/>
+        </label>
+    </form>
 </div>
+<script data-main="../lib/scripts/app" type="text/javascript" src="scripts/require.js"></script>
 </body>
 </html>

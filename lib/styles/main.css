@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     height: 100%;
 }
@@ -32,10 +35,125 @@ nav ul li a:hover {
     color: #ffffff;
 }
 #modal {
-    display: inline-block;
-    color: #ffffff;
-    opacity: 0;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 140px;
+    margin: -70px 0 0 -400px;
+    background: linear-gradient(#777777, #111111);
+    border: 1px solid #979d95;
+    border-radius: 35px;
+    box-shadow: 0 0 100px #ffffff;
+    padding: 35px;
+}
+#modal form input[type="text"] {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+#modal form input[type="submit"] {
+    margin: 15px auto;
+    height: 40px;
+    border: 0 solid #ffffff;
+    border-radius: 20px;
+    background: linear-gradient(#ffffff, #747476);
+    cursor: pointer;
+    font-size: 15pt;
+    display: block;
+    width: 220px;
+}
+#modal form input[type="submit"]:hover {
+    background: linear-gradient(#BBBBBB, #525252);
 }
 #modal:target {
-    opacity: 1;
+    display: block;
+}
+.close-button {
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+    box-shadow: -6px 4px 20px #000000;
+    position: absolute;
+    text-decoration: none;
+    top: -10px;
+    right: -10px;
+    background: #cccccc;
+    font-family: sans-serif;
+    width: 30px;
+    height: 30px;
+}
+.close-button:hover {
+    background: #ffffff;
+}
+main {
+    position: absolute;
+    left: 70px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+section {
+    width: 400px;
+    display: inline-block;
+    font-family: sans-serif;
+    color: #ffffff;
+    border: 5px solid #303236;
+    height: 100%;
+    overflow: scroll;
+}
+header {
+    background-color: #303236;
+    padding: 20px;
+}
+section h2 {
+    text-align: center;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+}
+.tapeLogo {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+section article {
+    padding: 10px;
+    border-bottom: 5px solid #777777;
+    border-radius: 15px;
+}
+.newsTitle {
+    margin: 0;
+    font-size: 14pt;
+    text-align: center;
+}
+.newsDescription p:first-child a {
+    display: block;
+    text-align: center;
+}
+.newsDescription img {
+    width: 80%;
+}
+.newsDescription p {
+    font-size: 10pt;
+    text-align: justify;
+}
+.newsDescription p a {
+    color: #0b97c4;
+}
+.newsDescription p:last-child a {
+    text-decoration: none;
+    color: azure;
+    font-size: 15pt;
+    display: block;
+    text-align: center;
+}
+.newsDescription p a:hover {
+    color: #0b97c4;
 }
